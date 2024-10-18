@@ -1,4 +1,7 @@
+package LeetCode.Medium;
+
 public class RemoveNthNodeFromTheEndOfTheList {
+
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null)
             return null;
