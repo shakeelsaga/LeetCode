@@ -15,11 +15,11 @@ class Solution:
         groupSize = length // k
 
         dummy = ListNode(-1)
-        curr = head
-
+        dummy.next = head
         
         prevGroup = dummy
-
+        curr = head
+        
         for x in range(groupSize):
             prev = None
             tail = curr
