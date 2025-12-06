@@ -22,9 +22,7 @@ class Solution:
         i = len(nums) - 1
         while i > index:
             if nums[i] > nums[index]:
-                temp = nums[i]
-                nums[i] = nums[index]
-                nums[index] = temp
+                nums[i], nums[index] = nums[index], nums[i]
                 self.rev(nums, index + 1, len(nums) - 1)
                 return
             i -= 1
