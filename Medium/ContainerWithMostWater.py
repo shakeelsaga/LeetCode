@@ -10,12 +10,12 @@ class Solution:
             width = right - left
 
             if height[left] < height[right]:
-                prod = height[left] * width
+                current_vol = height[left] * width
                 left += 1
             else:
-                prod = height[right] * width
+                current_vol = height[right] * width
                 right -= 1
             
-            volume = max(prod, volume)
+            volume = max(current_vol, volume)
 
         return volume
